@@ -1,34 +1,18 @@
-Subject: Study Processing Checklist – Completed for your review
+Thank you for reviewing it. I have made the two updates you requested for Report Only Study, and the updated file is attached.
 
-Hi [Manager name],
+What was changed (Report Only Study only):
 
-I have completed the changes to the Study Processing Checklist based on what we discussed in the meeting. The updated file is attached — could you please verify and confirm whether the changes match what we agreed? If anything needs to be adjusted, let me know and I will complete it.
+1. CT/CST Check table – now set to N/A automatically. When Report Only Study is selected, the CT/CST Check block auto-marks as N/A (shows a tick and dims), so those compound/assay checks no longer need to be completed. The rest of the AX Processing Checklist (Order Confirmed, AX Header Setup) stays active as before.
 
-What I changed:
+2. Study Details Check – #3 status reverted. Item #3 "Special Instructions Section Completed" and its sub-lines (CMT instructions, lab ops instructions, ICO instructions) now revert to active/"Not Ready" instead of N/A, so they are still completed. Items #1 and #2 remain N/A as before.
 
-1. Study type dropdown at the top – the user picks the study type / service line (Report Only Study, ADME, Ion Channel, BioMAP, Biomarker, Oncopanel, Biotherapeutics, ADME/Ion Channel, ADME/Biomap, Other).
+Nothing else was changed:
+- No change to the layout, colours, checkboxes, or any section.
+- All other study types (ADME, Ion Channel, BioMAP, Biomarker, Oncopanel, Biotherapeutics, and the combinations) behave exactly as before.
+- The earlier freezing issue remains fixed.
 
-2. Dynamic display – once a type is selected, only the applicable sections stay active. Sections that don't apply are dimmed and their N/A boxes tick automatically, so there is no need to click through unrelated checks.
+You can verify quickly: select "Report Only Study" and confirm the CT/CST Check block shows N/A while Study Details #3 shows "Not Ready"; then select "ADME" and confirm both are active again.
 
-3. "Sections for this selection" panel (right side) – shows, for the selected study type, which sections are Yes / No / Needs Confirmation. (Screenshot below.)
+For future reference, these two areas are now controlled individually in the Configuration tab (CT/CST Check set to No, Special Instructions set to Yes for Report Only), so any similar adjustment later is a single-cell change with no rebuild.
 
-4. Master Checklist – the full checklist is preserved on a hidden tab; nothing was removed. It can be unhidden to copy an extra section (with formulas intact).
-
-5. Configuration tab – a simple mapping table (Study Type | Section | Display) that controls what shows, so new service lines or sections can be added later without rebuilding.
-
-6. Existing behaviour kept – all checklist items, formulas, formatting, checkboxes, and the green/Ready status work as before.
-
-How it works: select a study type in the top cell → only the relevant sections stay active → complete those checks → completed items turn green → when nothing is left "Not Ready", the top shows "Ready to Proceed".
-
-Two points I would like you to confirm:
-- Report Only Study currently shows only the two sections from the existing file (Required Documents + AX Processing). The meeting mentioned Purchase Order checks may also be needed — I have flagged this as "Needs Business Confirmation".
-- "Other" has no defined mapping yet, so it shows everything as a safe default — also flagged for confirmation.
-
-Screenshots for reference:
-[Screenshot 1 – top of the sheet with the dropdown]
-[Screenshot 2 – "Sections for this selection" panel]
-
-Please let me know if this matches the meeting discussion or if any changes are required.
-
-Thanks,
-[Your name]
+Please review and let me know if this matches what you had in mind, or if any further changes are needed.
